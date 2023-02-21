@@ -10,12 +10,15 @@ function addItem() {
     // wyczysicc input po dodaniu
 
     const li = document.createElement('li');
-    li.input = input.value;
+    li.value = input.value;
     ul.appendChild(li);
 }
 
 
 // removeItem function 
+function removeItem() {
+
+}
 
 // edit function 
 
