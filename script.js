@@ -1,25 +1,65 @@
 const input = document.getElementById('input');
 const toDoList = [];
 const ul = document.getElementById('list');
+const addButton = document.getElementById('addbtn');
+
+// addButton.disabled = true;
 
 
 function addItem() {
+    if (input.value==='') {
+        return
+    } else {
+        // addButton.disabled = false;
+    }
+    
     toDoList.push(input.value);
-    console.log(toDoList);
     document.getElementById('input').value='';
-    // wyczysicc input po dodaniu
-
-    const li = document.createElement('li');
-    li.value = input.value;
-    ul.appendChild(li);
+    displayToDoList();
 }
+
+function displayToDoList() {
+    ul.innerHTML = "";
+    for(let i=0; i<toDoList.length; i++) {
+        const li = document.createElement('li');
+        li.innerHTML = `
+        <input type="checkbox">
+        <span>${toDoList[i]}</span>
+        <button>edit</button>
+        <button>remove</button>
+        `
+        ul.appendChild(li);
+    }
+}
+
+// this.displayToDoList();
+
+
 
 
 // removeItem function 
 function removeItem() {
+    // indexOf
+    // splice 
 
+
+
+    displayToDoList();
 }
 
 // edit function 
+function editItem() {
+    // eventListener
+
+}
+
 
 // array
+
+// const array = [1, 2, 3, 4, 5];
+
+//             const string = JSON.stringify(array, null, 4);
+
+//             document.querySelector(".output").innerHTML = string;
+
+// pierwszy jezyk programowania
