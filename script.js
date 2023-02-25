@@ -25,8 +25,10 @@ function displayToDoList() {
         li.innerHTML = `
         <input type="checkbox" id="checkbox">
         <span id="todoitem">${toDoList[i]}</span>
-        <button id="editbtn">edit</button>
-        <button id="rmbtn">remove</button>
+        <div id="btns">
+            <button id="editbtn">edit</button>
+            <button id="rmbtn">remove</button>
+        </div>
         `
         ul.appendChild(li);
     }
