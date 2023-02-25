@@ -21,16 +21,60 @@ body {
 .container {
     background-image: linear-gradient(to right bottom, purple, lightpink);
     font-size: 2rem;
-    padding: 3rem 10rem;
-    width: 20rem;
+    padding: 2rem 5rem;
+    width: 40rem;
     margin: 15rem auto;
     text-align: center;
     
     display: flex;
     flex-direction: column;
+    align-content: space-between;
+    row-gap: 2rem;
 }
 
 h1 {
     font-size: 5rem;
 
+}
+
+#input {
+
+}
+
+#addtn {
+
+}
+
+#list {
+   margin: 2rem 0;
+}
+
+li {
+    list-style: none;
+    font-size: 2rem;
+    margin: 2rem 0;
+
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+#checkbox {
+
+}
+
+#todoitem {
+
+}
+
+#editbtn {
+
+}
+
+#rmbtn {
+    
+}
+
+button {
+    font-size: 2rem;
 }
