@@ -1,9 +1,36 @@
 * {
-    font-size: 20px;
-    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 body {
-    height: 1000px;
-    width: 1000px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-image: linear-gradient(to right bottom, lightpink, purple);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-image: linear-gradient(to right bottom, purple, lightpink);
+    font-size: 2rem;
+    padding: 3rem 10rem;
+    width: 20rem;
+    margin: 15rem auto;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 5rem;
+
 }
