@@ -13,13 +13,13 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #fff;
-    background-image: linear-gradient(to right bottom, lightpink, purple);
+    background-image: linear-gradient(to right bottom, rgb(255, 236, 239), rgb(251, 145, 145));
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .container {
-    background-image: linear-gradient(to right bottom, rgb(250, 155, 169), rgb(182, 10, 182));
+    background-image: linear-gradient(to right bottom, rgb(250, 155, 169), rgb(221, 217, 96));
     padding: 2rem 5rem;
     width: 40rem;
     margin: 5rem auto;
