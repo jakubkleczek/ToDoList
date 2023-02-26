@@ -1,3 +1,5 @@
+'use strict';
+
 const input = document.getElementById('input');
 const toDoList = [];
 const ul = document.getElementById('list');
@@ -27,29 +29,26 @@ function displayToDoList() {
         <span id="todoitem">${toDoList[i]}</span>
         <div id="btns">
             <button id="editbtn">edit</button>
-            <button id="rmbtn">remove</button>
+            <button onclick="removeItem()" id="rmbtn">remove</button>
         </div>
         `
         ul.appendChild(li);
     }
 }
 
-// this.displayToDoList();
-
-
-
-
 // removeItem function 
 function removeItem() {
+    const li = document.createElement('li');
+    delete ul.li;
+
     // indexOf
     // splice 
-
 
 
     displayToDoList();
 }
 
-// edit function 
+// editItem function 
 function editItem() {
     // eventListener
 
@@ -58,10 +57,5 @@ function editItem() {
 
 // array
 
-// const array = [1, 2, 3, 4, 5];
 
-//             const string = JSON.stringify(array, null, 4);
-
-//             document.querySelector(".output").innerHTML = string;
-
-// pierwszy jezyk programowania
+// pierwszy jezyk programowania FORTRAN 54' - John Backus działania matematyczne
