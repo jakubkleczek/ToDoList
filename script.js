@@ -4,6 +4,7 @@ const input = document.getElementById('input');
 const toDoList = [];
 const ul = document.getElementById('list');
 const addButton = document.getElementById('addbtn');
+const editInput = document.getElementById('')
 
 // addButton.disabled = true;
 
@@ -28,8 +29,8 @@ function displayToDoList() {
         <input type="checkbox" id="checkbox">
         <span id="todoitem">${toDoList[i]}</span>
         <div id="btns">
-            <button id="editbtn">edit</button>
-            <button onclick="removeItem()" id="rmbtn">remove</button>
+            <button onclick="editItem(${i})" id="editbtn">edit</button>
+            <button onclick="removeItem(${i})" id="rmbtn">remove</button>
         </div>
         `
         ul.appendChild(li);
@@ -37,25 +38,21 @@ function displayToDoList() {
 }
 
 // removeItem function 
-function removeItem() {
-    const li = document.createElement('li');
-    delete ul.li;
-
-    // indexOf
-    // splice 
-
-
+function removeItem(key) {
+    toDoList.splice(key, 1);
     displayToDoList();
 }
 
 // editItem function 
-function editItem() {
+function editItem(key) {
+    
+
+
     // eventListener
 
 }
 
-
 // array
 
 
-// pierwszy jezyk programowania FORTRAN 54' - John Backus działania matematyczne
+// pierwszy jezyk programowania FORTRAN 54' - John Backus - działania matematyczne
